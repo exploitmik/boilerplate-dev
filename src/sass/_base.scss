@@ -1,0 +1,10 @@
+:root {
+
+	font-size: 100%;
+	font-family: var(--font-primary);
+
+	@media #{$break-lg} {
+		font-size: 120%;
+	}
+
+}

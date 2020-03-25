@@ -1,0 +1,27 @@
+:root {
+
+	--color-primary: blueviolet;
+	--color-secondary: rebeccapurple;
+
+	--scale: 1.418;
+	--font-xs: .8rem;
+  --font-sm: 1rem;
+  --font-md: calc(var(--font-sm) * var(--scale));
+  --font-lg: calc(var(--font-md) * var(--scale));
+  --font-xl: calc(var(--font-lg) * var(--scale));
+
+	--font-primary: monospace;
+	--font-secondary: '';
+
+	--font-color-primary: #313131;
+	--font-color-secondary: #616161;
+
+	--box-shadow: 0 .8em 1.25em rgba(0,0,0,.07);
+	--box-shadow-hover: 0 .8em 1.25em rgba(0,0,0,.2);
+	--border-radius: .8em;
+
+}
+
+$break-sm: "(max-width: 640px)";
+$break-md: "(min-width: 768px)";
+$break-lg: "(min-width: 1024px)";

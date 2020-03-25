@@ -1,0 +1,12 @@
+%link {
+  text-decoration: none;
+  color: currentColor;
+  outline: none; 
+  position: relative;
+  box-shadow: 0 2px #cdcdcd;
+
+  &:focus {
+    border: 2px dashed var(--text-color3);
+    box-shadow: none;
+  }
+}
