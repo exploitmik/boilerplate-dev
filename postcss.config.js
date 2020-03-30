@@ -1,4 +1,4 @@
-const noRunningDev = (cb) => process.env.NODE_ENV == ! 'dev' ? cb : null;
+const noRunningDev = (cb) => process.env.NODE_ENV == ! 'development' ? cb : null;
 
 module.exports = {
 	plugins: [

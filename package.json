@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev webpack -w --mode=development",
-    "build": "webpack --mode=production"
+    "dev": "cross-env NODE_ENV=development webpack -w",
+    "build": "cross-env NODE_ENV=production webpack",
+    "browser": "cd dist && browser-sync --start --watch --no-notify"
   },
   "keywords": [],
   "author": "Mikéias Oliveira",
@@ -14,6 +15,8 @@
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
     "cross-env": "^6.0.3",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
@@ -22,14 +25,18 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.20.1",
     "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^4.0.2",
     "mini-css-extract-plugin": "^0.8.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
+    "purgecss-webpack-plugin": "^2.1.0",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.0",
     "terser-webpack-plugin": "^2.2.3",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.9",
+    "workbox-webpack-plugin": "^5.1.2",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
